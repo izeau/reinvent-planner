@@ -42,7 +42,7 @@ function parseEvents(rawEventsJson) {
       // Add event to events object.
       events[event.id] = {
         id: event.id,
-        title: `${event.abbreviation} (${location}) [${event.type}]`,
+        title: `${event.abbreviation} [${event.type}] ${event.title}`,
         tooltip: `${event.abbreviation} - ${event.title} (${location}) [${
           event.type
         }]`,
